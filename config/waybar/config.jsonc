@@ -1,0 +1,66 @@
+{
+	"layer": "bottom",
+	"position": "top",
+	"mod": "dock",
+	"exculisive": true,
+	"passtrough": false,
+	"height": 24,
+	"spacing": 4,
+	"margin-top": 2,
+	"margin-left": 6,
+	"margin-right": 6,
+
+	"modules-left": ["clock"],
+	"modules-center": ["hyprland/workspaces"],
+	"modules-right": ["backlight", "custom/divider", "pulseaudio", "custom/divider", "network"],
+
+	"clock": {
+		"format": "  {:%I:%M %p}",
+		"format-alt": "󰃭  {:%Y/%m/%d}",
+		"tooltip": false,
+	},
+
+	"hyprland/workspaces": {
+		"format": "{icon}",
+		"on-click": "activate",
+		"all-outputs": true,
+		"cursor": true,
+		"format-icons": {"active": "󰄛", "default": "", "empty": ""},
+		"persistent-workspaces": {
+			"*": 5
+		},
+	},
+
+	"backlight": {
+		"format": "  {percent}%",
+		"tooltip": false,
+	},
+
+	"pulseaudio": {
+		"format": "   {volume}%",
+		"format-muted": " ",
+		"on-click": "pavucontrol",
+		"tooltip": false,
+	},
+
+	"network": {
+		"format-wifi": " ",
+		"format-ethernet": " ",
+		"format-disconnected": "󱘖 ",
+		"tooltip": false,
+	},
+
+	"custom/divider": {
+		"format": " ",
+		"interval": "once",
+		"tooltip": false,
+	},
+
+	"custom/performance": {
+		"exec": "$HOME/.config/waybar/scripts/perf_usage.sh",
+		"return-type": "json",
+		"interval": 5,
+		"tooltip": true,
+	},
+	
+}

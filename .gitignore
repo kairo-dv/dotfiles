@@ -1,0 +1,21 @@
+# Ignore cache and session files
+config/session/
+config/chromium/
+config/zen/
+config/dconf/
+config/pulse/
+config/procps/
+config/baloofileinformationrc
+config/kdeglobals
+config/ktimezonedrc
+config/kiorc
+config/ktrashrc
+config/mimeapps.list
+config/QtProject.conf
+config/starship.toml
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*~

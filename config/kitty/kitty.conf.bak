@@ -1,0 +1,42 @@
+# --- FONT ---
+font_family Fira Code
+bold_font auto
+italic_font auto
+bold_italic_font auto
+
+font_size 12.0
+
+# --- CURSOR ---
+cursor_shape block
+shell_integration no-cursor
+
+# --- BEHAVIOR ---
+mouse_hide_wait 2.0
+url_prefixes file ftp ftps gemini git gopher http https irc ircs kitty mailto news sftp ssh
+
+inactive_text_alpha .8
+hide_window_decorations yes
+resize_debounce_time 0.1 0.25
+
+# --- TABS ---
+tab_bar_style powerline
+tab_powerline_style slanted
+tab_activity_symbol 
+tab_title_max_length 8
+
+# --- COLORS ---
+background #1a1510
+foreground #d2eef8
+
+cursor #f5c56e
+cursor_text_color #1a1510
+
+url_color #f07178
+
+active_border_color #f07178
+inactive_border_color #f07178
+
+active_tab_foreground #bfbdb6
+active_tab_background #f06b73
+inactive_tab_foreground #33393a
+inactive_tab_background #bfbdb6

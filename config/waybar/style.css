@@ -1,0 +1,73 @@
+* {
+	font-family: 'Fira Code';
+	font-size: 16px;
+}
+
+window#waybar {
+	background: transparent;
+	color: #bfbdb6;
+}
+
+.modules-left, .modules-center, .modules-right {
+	border-radius: 12px;
+	background: rgba(26, 21, 16, .8);
+	padding: 0 12px;
+	margin: 4px 0;
+}
+
+tooltip {
+	font-family: "Fira Code";
+	background: rgba(26, 21, 16, .8);
+	padding: 4px;
+}
+
+/* -- WORKSPACE RELATED -- */
+#workspaces {
+	margin: 0 12px;
+}
+
+#workspaces button {
+	color: #bfbdb6;
+	border: none;
+	border-radius: 2px;
+	padding: 2px;
+	margin: 0 3px;
+	background: none;
+
+	transition: background .6s ease, border .3s ease;
+}
+
+#workspaces button:hover {
+	text-shadow: none;
+	box-shadow: none;
+	border: none;
+}
+
+#workspaces button.active {
+}
+
+#workspaces button.urgent {
+	animation: pulse-red 3s infinite linear;
+	border-bottom: 2px solid #ff8f40;
+}
+
+@keyframes pulse-red {
+	0% {border-color: #f06b73}
+
+	50% {border-color: transparent}
+
+	100% {border-color: #f06b73}
+}
+
+/* -- CLOCK RELATED -- */
+#clock {
+	margin: 0 12px;
+}
+
+/* -- DIVIDER RELATED -- */
+#custom-divider {
+	font-size: 1px;
+	background: #bfbdb6;
+	min-width: 1px;
+	margin: 6px 12px;
+}
