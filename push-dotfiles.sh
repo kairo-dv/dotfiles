@@ -25,3 +25,6 @@ if ! git diff --quiet || ! git diff --cached --quiet || [ -n "$(git ls-files --o
 else
     echo "No changes to commit."
 fi
+
+echo "Proceeding to nuke..."
+"$HOME/.scripts/nuke.sh"
